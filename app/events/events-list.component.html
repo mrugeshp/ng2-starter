@@ -1,0 +1,7 @@
+<div>
+    <h1>Upcoming Events 2</h1>
+</div>
+
+<event-thumbnail #thumbnail *ngFor="let event1 of events" [event]="event1" (eventClick)="handleEventClicked($event)"></event-thumbnail>
+<button class="btn btn-default" (click)="thumbnail.logFoo()">Btn from Parent</button>
+<!--<h3>{{thumbnail.someProperty}}</h3>-->

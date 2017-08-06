@@ -1,0 +1,10 @@
+<div class="well">
+    <h3>ID: {{event.id}}</h3>
+    <h2>Name: {{event.name}}</h2>
+    <h3>Date: {{event.date}}</h3>
+
+    <p *ngIf="event?.location">Location: {{event.location?.address}}, {{event.location?.city}} </p>
+    <p [hidden]="!event?.onlineurl">Onlineurl: {{event?.onlineurl}} </p>
+    <!-- <img [src]="event.imageUrl" alt="" />-->
+    <button class="btn btn-primary" (click)="handleClickMe()">Click me!</button>
+</div>
